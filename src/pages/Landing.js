@@ -1,3 +1,6 @@
+
+import {Link} from 'react-router-dom'
+
 import main from '../assets/images/main.svg'
 import Wrapper from '../assets/wrappers/LandingPage'
 import {Logo} from '../components'
@@ -17,7 +20,9 @@ const Landing = () => {
           <p>
           Next level gatekeep distillery, swag seitan banjo actually woke fixie yuccie. Etsy kitsch banjo, JOMO drinking vinegar master cleanse cold-pressed. Cronut craft beer JOMO four dollar toast echo park man bun adaptogen shabby chic marfa next level affogato selvage direct trade vexillologist.
           </p>
-          <button className='btn btn-hero'>Login/Register</button>
+          <Link to='/register' className='btn btn-hero'>
+            Login / Register
+          </Link>
         </div>
         <img src={main} alt='job hunt' className='ing main-img'/>
       </div>
